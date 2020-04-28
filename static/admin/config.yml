@@ -8,7 +8,7 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
-  - name: "/collection/vacatures" # Used in routes, e.g., /admin/collections/blog
+  - name: "collection/vacatures" # Used in routes, e.g., /admin/collections/blog
     label: "vacature" # Used in the UI
     folder: "_posts/vacatures" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
@@ -20,7 +20,7 @@ collections:
       - { label: "Afbeelding", name: "thumbnail", widget: "image" }
       - { label: "Vereisten", name: "requirements", widget: "string" }
       - { label: "Profiel", name: "profile", widget: "string" }
-  - name: "/collection/promos" # Used in routes, e.g., /admin/collections/blog
+  - name: "collection/promos" # Used in routes, e.g., /admin/collections/blog
     label: "promos" # Used in the UI
     folder: "_posts/promos" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
@@ -29,3 +29,13 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Afbeelding", name: "thumbnail", widget: "image" }
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/home.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro text, name: intro, widget: text }
+          - { label: Image, name: image, widget: image }
