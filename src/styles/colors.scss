@@ -6,3 +6,15 @@ $yellow: #f7fb28;
 
 $team-bg: rgba(240, 99, 184, 0.15);
 $purple: #212353;
+
+$yellow-bg: yellow;
+$grey-bg: grey;
+$blue-bg: blue;
+$red-bg: red;
+
+$list: $yellow-bg, $grey-bg, $blue-bg, $red-bg;
+
+$nth1: nth($list, 1);
+$nth2: nth($list, 2);
+$nth3: nth($list, 3);
+$nth4: nth($list, 4);

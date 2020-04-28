@@ -4,11 +4,12 @@ import styles from "../styles/feature.module.scss"
 export default function Feature({ title, imgSrc, paragraph }) {
   return (
     <div className={styles.item}>
+      {/* <div className={styles.background}></div> */}
       <div
         style={{
           backgroundImage: `Url(${imgSrc})`,
-          width: "600px",
-          height: "300px",
+          width: "300px",
+          height: "200px",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           borderRadius: "20px",
@@ -16,9 +17,9 @@ export default function Feature({ title, imgSrc, paragraph }) {
           right: "70px",
         }}
       />
-      <div>
-        <h3>{title}</h3>
-        <p>{paragraph}</p>
+      <div className={styles.textarea}>
+        <h3 className={styles.title}>{title}</h3>
+        <p className={styles.paragraph}>{paragraph}</p>
       </div>
     </div>
   )

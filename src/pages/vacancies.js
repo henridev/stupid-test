@@ -1,11 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Vacancy from "../components/vacancies/vacany"
+import Navbar from "../components/global/navbar"
 
 export default function Vacancies({ data }) {
   console.log("data", data)
   return (
     <div>
+      <Navbar />
       {data.allMarkdownRemark.edges.map(({ node }) => {
         return (
           <Vacancy

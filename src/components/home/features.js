@@ -20,17 +20,17 @@ export default function features() {
         />
         <Feature
           title="Verse Bakkerij"
-          imgSrc="/jpg/koeken.jpg"
+          imgSrc="/jpg/fruit.jpg"
           paragraph="Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time."
         />
         <Feature
           title="Verse Bakkerij"
-          imgSrc="/jpg/koeken.jpg"
+          imgSrc="/jpg/lunch.jpg"
           paragraph="Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time."
         />
         <Feature
           title="Verse Bakkerij"
-          imgSrc="/jpg/koeken.jpg"
+          imgSrc="/jpg/toog.jpg"
           paragraph="Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time."
         />
       </div>

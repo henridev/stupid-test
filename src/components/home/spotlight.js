@@ -32,11 +32,13 @@ export default function Spotlight({ title }) {
           <div className={styles.wrapper}>
             <h2 className={styles.title}>Promoties en spotlight</h2>
             <div className={styles.promotions}>
-              {data.allMarkdownRemark.edges.map(({ node }) => {
-                return <Item />
-              })}
+              <div className={styles.slides}>
+                {data.allMarkdownRemark.edges.map(({ node }) => {
+                  return <Item />
+                })}
+                <span></span>
+              </div>
             </div>
-            <div>navigator</div>
           </div>
         )
       }}
