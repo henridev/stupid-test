@@ -27,7 +27,6 @@ export default function Spotlight({ title }) {
         }
       `}
       render={data => {
-        console.log("data", data)
         return (
           <div className={styles.wrapper}>
             <h2 className={styles.title}>Promoties en spotlight</h2>
