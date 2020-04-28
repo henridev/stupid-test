@@ -6,5 +6,26 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/, // See below to configure properly
+        },
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "files",
+        path: `${__dirname}/src/markdown`,
+      },
+    },
+    `gatsby-transformer-remark`,
+  ],
+  siteMetadata: {
+    title: "Delhaize dok noord",
+  },
 }
