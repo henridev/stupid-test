@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import styles from "../styles/navbar.module.scss"
 import Button from "./button"
-import logo from "../../images/svg/logo.svg"
 
 const NavLink = props => {
   return (
@@ -15,7 +14,7 @@ const NavLink = props => {
 export default function Navbar() {
   return (
     <nav className={styles.nav}>
-      <img src={logo} alt="logo" className={styles.logo} />
+      <img src={"/svg/logo.svg"} alt="logo" className={styles.logo} />
       <div className={styles.linkwrapper}>
         <NavLink to="/" text="home" />
         <NavLink to="/order" text="bestel" />

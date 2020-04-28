@@ -1,5 +1,4 @@
 import React from "react"
-import top from "../../images/svg/top.svg"
 import styles from "../styles/landing.module.scss"
 import Button from "../global/button"
 import { StaticQuery, graphql } from "gatsby"
@@ -26,7 +25,7 @@ export default function Landing({ title }) {
             </p>
             <Button text="meer info" style={styles.button}></Button>
           </div>
-          <img src={top} alt="store" className={styles.image} />
+          <img src={"/svg/top.svg"} alt="store" className={styles.image} />
         </div>
       )}
     />
