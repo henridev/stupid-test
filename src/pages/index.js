@@ -2,7 +2,7 @@ import React from "react"
 
 import Navbar from "../components/global/navbar"
 import Footer from "../components/global/footer"
-import Landing from "../components/home/Landing"
+import Landing from "../components/home/landing"
 import Features from "../components/home/features"
 import Team from "../components/home/team"
 import Spotlight from "../components/home/spotlight"
