@@ -2,7 +2,7 @@ import React from "react"
 import top from "../../images/svg/top.svg"
 import styles from "../styles/landing.module.scss"
 import Button from "../global/button"
-import { Link, StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 
 export default function Landing({ title }) {
   return (

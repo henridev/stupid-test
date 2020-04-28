@@ -9,6 +9,7 @@ export default function Vacancies({ data }) {
       {data.allMarkdownRemark.edges.map(({ node }) => {
         return (
           <Vacancy
+            to={node.fields.slug}
             key={node.id}
             title={node.frontmatter.title}
             date={node.frontmatter.date}
@@ -25,6 +26,9 @@ export const query = graphql`
     allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
       edges {
         node {
+          fields {
+            slug
+          }
           id
           excerpt
           headings {
