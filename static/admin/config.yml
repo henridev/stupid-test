@@ -39,3 +39,12 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Intro text, name: intro, widget: text }
           - { label: Image, name: image, widget: image }
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
