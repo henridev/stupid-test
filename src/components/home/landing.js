@@ -25,7 +25,11 @@ export default function Landing({ title }) {
             </p>
             <Button text="meer info" style={styles.button}></Button>
           </div>
-          <img src={"/svg/top.svg"} alt="store" className={styles.image} />
+          <img
+            src={"/assets/images/svg/top.svg"}
+            alt="store"
+            className={styles.image}
+          />
         </div>
       )}
     />

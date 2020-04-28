@@ -14,7 +14,11 @@ const NavLink = props => {
 export default function Navbar() {
   return (
     <nav className={styles.nav}>
-      <img src={"/svg/logo.svg"} alt="logo" className={styles.logo} />
+      <img
+        src={"/assets/images/svg/logo.svg"}
+        alt="logo"
+        className={styles.logo}
+      />
       <div className={styles.linkwrapper}>
         <NavLink to="/" text="home" />
         <NavLink to="/order" text="bestel" />

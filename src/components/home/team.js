@@ -1,11 +1,14 @@
 import React from "react"
 import styles from "../styles/team.module.scss"
-// import team from "../../assets/svg/team.svg"
 
 export default function Team() {
   return (
     <div className={styles.wrapper}>
-      <img src={`./svg/team.svg`} alt="team" className={styles.image} />
+      <img
+        src={`/assets/images/svg/team.svg`}
+        alt="team"
+        className={styles.image}
+      />
       <div className={styles.right}>
         <h2 className={styles.title}>Ons team staat voor u klaar</h2>
         <p className={styles.paragraph}>

@@ -17,7 +17,11 @@ export default function Footer() {
         <div className={styles.companyinfo}>
           <div className={styles.company}>
             <div style={{ display: "flex" }}>
-              <img src="/svg/logo.svg" alt="logo" className={styles.logo} />
+              <img
+                src="/assets/images/svg/logo.svg"
+                alt="logo"
+                className={styles.logo}
+              />
               <span className={styles.name}>Delhaize Dok Noord</span>
             </div>
             <div className={styles.address}>

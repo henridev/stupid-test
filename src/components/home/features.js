@@ -15,22 +15,22 @@ export default function features() {
       <div className={styles.features}>
         <Feature
           title="Verse Bakkerij"
-          imgSrc="/jpg/koeken.jpg"
+          imgSrc="/assets/images/jpg/koeken.jpg"
           paragraph="Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time."
         />
         <Feature
           title="Verse Bakkerij"
-          imgSrc="/jpg/fruit.jpg"
+          imgSrc="/assets/images/jpg/fruit.jpg"
           paragraph="Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time."
         />
         <Feature
           title="Verse Bakkerij"
-          imgSrc="/jpg/lunch.jpg"
+          imgSrc="/assets/images/jpg/lunch.jpg"
           paragraph="Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time."
         />
         <Feature
           title="Verse Bakkerij"
-          imgSrc="/jpg/toog.jpg"
+          imgSrc="/assets/images/jpg/toog.jpg"
           paragraph="Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time."
         />
       </div>
