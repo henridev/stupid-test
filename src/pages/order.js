@@ -1,11 +1,6 @@
 import React from "react"
-import Navbar from "../components/global/navbar"
+import Layout from "../components/global/layout"
 
 export default function OrderPage() {
-  return (
-    <main>
-      <Navbar />
-      hello from Order
-    </main>
-  )
+  return <Layout>hello from Order</Layout>
 }

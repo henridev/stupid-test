@@ -1,18 +1,17 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Navbar from "../components/global/navbar"
+import Layout from "../components/global/layout"
 import styles from "./vacancy.module.scss"
 
 export default function Vacancy({ data }) {
   const post = data.markdownRemark
   return (
-    <div>
-      <Navbar />
+    <Layout>
       <div className={styles.container}>
         {/* <img src={``} alt="img"></img> */}
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </div>
-    </div>
+    </Layout>
   )
 }
 
