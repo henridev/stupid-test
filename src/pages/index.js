@@ -13,15 +13,23 @@ export default function HomePage({ data }) {
   const {
     markdownRemark: {
       frontmatter: {
-        subtitle_two,
-        subtitle_three,
-        subtitle_one,
-        title_three,
-        title_two,
-        title_one,
+        subtitleTwo,
+        subtitleThree,
+        subtitleOne,
+        titleThree,
+        titleTwo,
+        titleOne,
         titleOneSpot,
         titleTwoSpot,
         titleThreeSpot,
+        feature1,
+        feature2,
+        feature3,
+        feature4,
+        feature1Text,
+        feature2Text,
+        feature3Text,
+        feature4Text,
       },
     },
   } = data
@@ -29,9 +37,20 @@ export default function HomePage({ data }) {
     <Layout>
       <div className={styles.container}>
         <main className={styles.home}>
-          <Landing title={title_one} subtitle={subtitle_one} />
-          <Team title={title_two} subtitle={subtitle_two} />
-          <Features title={title_three} subtitle={subtitle_three} />
+          <Landing title={titleOne} subtitle={subtitleOne} />
+          <Team title={titleTwo} subtitle={subtitleTwo} />
+          <Features
+            title={titleThree}
+            subtitle={subtitleThree}
+            feature1={feature1}
+            feature2={feature2}
+            feature3={feature3}
+            feature4={feature4}
+            feature1Text={feature1Text}
+            feature2Text={feature2Text}
+            feature3Text={feature3Text}
+            feature4Text={feature4Text}
+          />
           <Spotlight
             titleOneSpot={titleOneSpot}
             titleTwoSpot={titleTwoSpot}
@@ -47,15 +66,23 @@ export const query = graphql`
   query {
     markdownRemark(fileAbsolutePath: { glob: "**/home.md" }) {
       frontmatter {
-        subtitle_two
-        subtitle_three
-        subtitle_one
-        title_three
-        title_two
-        title_one
+        subtitleTwo
+        subtitleThree
+        subtitleOne
+        titleThree
+        titleTwo
+        titleOne
         titleOneSpot
         titleTwoSpot
         titleThreeSpot
+        feature1
+        feature2
+        feature3
+        feature4
+        feature1Text
+        feature2Text
+        feature3Text
+        feature4Text
       }
     }
   }

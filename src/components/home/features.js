@@ -2,7 +2,18 @@ import React from "react"
 import Feature from "../features/feature"
 import styles from "../styles/features.module.scss"
 
-export default function features({ title, subtitle }) {
+export default function features({
+  title,
+  subtitle,
+  feature1,
+  feature2,
+  feature3,
+  feature4,
+  feature1Text,
+  feature2Text,
+  feature3Text,
+  feature4Text,
+}) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.heading}>
@@ -11,24 +22,24 @@ export default function features({ title, subtitle }) {
       </div>
       <div className={styles.features}>
         <Feature
-          title="Verse Bakkerij"
+          title={feature1}
           imgSrc="/assets/images/uploads/feature1.jpg"
-          paragraph="Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time."
+          paragraph={feature1Text}
         />
         <Feature
-          title="Verse Bakkerij"
+          title={feature2}
           imgSrc="/assets/images/uploads/feature2.jpg"
-          paragraph="Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time."
+          paragraph={feature2Text}
         />
         <Feature
-          title="Verse Bakkerij"
+          title={feature3}
           imgSrc="/assets/images/uploads/feature3.jpg"
-          paragraph="Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time."
+          paragraph={feature3Text}
         />
         <Feature
-          title="Verse Bakkerij"
+          title={feature4}
           imgSrc="/assets/images/uploads/feature4.jpg"
-          paragraph="Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time."
+          paragraph={feature4Text}
         />
       </div>
     </div>
