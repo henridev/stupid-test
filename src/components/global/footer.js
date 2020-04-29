@@ -27,11 +27,6 @@ export default function Footer() {
 
       <div className={styles.row2}>
         <div className={styles.companyinfo}>
-          <img
-            width="300"
-            src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s-marker+ff0000(3.733121,51.066234)/3.733121,51.066234,15,0/500x500@2x?access_token=pk.eyJ1IjoiYmVsa2UwNSIsImEiOiJjazBzNDFnY2owYzQ0M21xbGxwZnNqZW91In0.uiusgRl10zeCVqvUH6PtMg"
-            alt="Mapbox Map of 3.733121,51.066234"
-          />
           <div className={styles.company}>
             <div style={{ display: "flex" }}>
               <img
@@ -47,7 +42,11 @@ export default function Footer() {
               9000 Gent
             </div>
           </div>
-
+          <img
+            width="300"
+            src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s-marker+ff0000(3.733121,51.066234)/3.733121,51.066234,15,0/500x500@2x?access_token=pk.eyJ1IjoiYmVsa2UwNSIsImEiOiJjazBzNDFnY2owYzQ0M21xbGxwZnNqZW91In0.uiusgRl10zeCVqvUH6PtMg"
+            alt="Mapbox Map of 3.733121,51.066234"
+          />
           <div className={styles.socials}>
             <div className={styles.contacts}>
               tel: 09 224 11 19 <br />
@@ -58,7 +57,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div>Created by {data.site.siteMetadata.author}, 2020</div>
+      <div className={styles.copyright}>
+        © Created by {data.site.siteMetadata.author}, 2020
+      </div>
     </footer>
   )
 }

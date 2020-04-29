@@ -32,7 +32,7 @@
 
 .item::after {
   content: "";
-  opacity: 0.3;
+  opacity: 0.5;
   -webkit-mask-image: url("/assets/images/svg/feature-bg.svg");
   mask-image: url("/assets/images/svg/feature-bg.svg");
   mask-repeat: no-repeat;
