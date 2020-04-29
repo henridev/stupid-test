@@ -6,27 +6,20 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Delhaize dok noord",
+    author: "Henri De Bel",
+  },
   plugins: [
     `gatsby-plugin-netlify-cms`,
     "gatsby-plugin-sass",
     {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /assets/, // See below to configure properly
-        },
-      },
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "files",
-        path: `${__dirname}/src/markdown`,
+        name: "src-of-markdowns",
+        path: `${__dirname}/src/markdown`, // the path to source from
       },
     },
     `gatsby-transformer-remark`,
   ],
-  siteMetadata: {
-    title: "Delhaize dok noord",
-  },
 }

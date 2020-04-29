@@ -2,8 +2,19 @@ import React from "react"
 import styles from "../styles/footer.module.scss"
 import Button from "./button"
 import SocialButton from "./socialbutton"
+import { useStaticQuery, graphql } from "gatsby"
 
 export default function Footer() {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          author
+        }
+      }
+    }
+  `)
+
   return (
     <footer className={styles.wrapper}>
       <div className={styles.row1}>
@@ -40,6 +51,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <div>Created by {data.site.siteMetadata.author}, 2020</div>
     </footer>
   )
 }

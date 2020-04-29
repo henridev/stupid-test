@@ -2,43 +2,12 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
   # This line should *not* be indented
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 # These lines should *not* be indented
 media_folder: static/assets
 public_folder: /assets
 
 collections:
-  - name: "collection/vacatures" # Used in routes, e.g., /admin/collections/blog
-    label: "vacature" # Used in the UI
-    folder: "_posts/vacatures" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Afbeelding", name: "thumbnail", widget: "image" }
-      - { label: "Vereisten", name: "requirements", widget: "string" }
-      - { label: "Profiel", name: "profile", widget: "string" }
-  - name: "collection/promos" # Used in routes, e.g., /admin/collections/blog
-    label: "promos" # Used in the UI
-    folder: "_posts/promos" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Afbeelding", name: "thumbnail", widget: "image" }
-  - label: "Pages"
-    name: "pages"
-    files:
-      - label: "Home Page"
-        name: "home"
-        file: "content/home.md"
-        fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Intro text, name: intro, widget: text }
-          - { label: Image, name: image, widget: image }
   - name: blog
     label: Blog
     folder: blog
@@ -48,3 +17,34 @@ collections:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+  # - name: "collection/vacatures" # Used in routes, e.g., /admin/collections/blog
+  #   label: "vacature" # Used in the UI
+  #   folder: "_posts/vacatures" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  #   fields: # The fields for each document, usually in front matter
+  #     - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+  #     - { label: "Title", name: "title", widget: "string" }
+  #     - { label: "Publish Date", name: "date", widget: "datetime" }
+  #     - { label: "Afbeelding", name: "thumbnail", widget: "image" }
+  #     - { label: "Vereisten", name: "requirements", widget: "string" }
+  #     - { label: "Profiel", name: "profile", widget: "string" }
+  # - name: "collection/promos" # Used in routes, e.g., /admin/collections/blog
+  #   label: "promos" # Used in the UI
+  #   folder: "_posts/promos" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  #   fields: # The fields for each document, usually in front matter
+  #     - { label: "Title", name: "title", widget: "string" }
+  #     - { label: "Publish Date", name: "date", widget: "datetime" }
+  #     - { label: "Afbeelding", name: "thumbnail", widget: "image" }
+  # - label: "Pages"
+  #   name: "pages"
+  #   files:
+  #     - label: "Home Page"
+  #       name: "home"
+  #       file: "content/home.md"
+  #       fields:
+  #         - { label: Title, name: title, widget: string }
+  #         - { label: Intro text, name: intro, widget: text }
+  #         - { label: Image, name: image, widget: image }

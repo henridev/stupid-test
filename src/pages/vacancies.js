@@ -25,7 +25,10 @@ export default function Vacancies({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { glob: "**/vacancies/*.md" } }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
       edges {
         node {
           fields {

@@ -8,14 +8,15 @@ export default function Spotlight({ title }) {
     <StaticQuery
       query={graphql`
         query {
-          allMarkdownRemark {
+          allMarkdownRemark(
+            filter: { fileAbsolutePath: { glob: "**/promotions/*.md" } }
+          ) {
             edges {
               node {
-                id
-                excerpt
-                headings {
-                  value
+                fields {
+                  slug
                 }
+                excerpt
                 frontmatter {
                   date
                   title
@@ -33,7 +34,15 @@ export default function Spotlight({ title }) {
             <div className={styles.promotions}>
               <div className={styles.slides}>
                 {data.allMarkdownRemark.edges.map(({ node }) => {
-                  return <Item />
+                  console.log("node", node)
+                  return (
+                    <Item
+                      to={node.fields.slug}
+                      title={node.frontmatter.title}
+                      imgSrc={node.frontmatter.image}
+                      data={node.frontmatter.date}
+                    />
+                  )
                 })}
                 <span></span>
               </div>
