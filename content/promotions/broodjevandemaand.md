@@ -1,8 +1,10 @@
 ---
-title: "broodje van de maand"
-date: "2019-01-10"
+date: 2019-01-10
+title: broodje van de maand
 image: ""
-keywords: "promotie"
+keywords: promotie
+path: broodjevandemaand
 ---
 
-bij aankoop van 2 nieuwe producten derde gratis
+
+![](/assets/20161101_08122111.jpg)

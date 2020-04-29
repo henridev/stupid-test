@@ -1,8 +1,8 @@
 ---
-title: "week promo"
-date: "2019-01-10"
+date: 2019-01-10
+title: spotlight van de week
 image: ""
-keywords: "promotie"
+keywords: promotie
+path: weekpromo
 ---
-
-bij aankoop van 2 nieuwe producten derde gratis
+nieuwe verse asperges
