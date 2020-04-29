@@ -13,8 +13,18 @@ export default function HomePage() {
     <Layout>
       <div className={styles.container}>
         <main className={styles.home}>
-          <Landing title="Welcome" />
-          <Team />
+          <Landing
+            title={"Delhaize DokNoord"}
+            subtitle={
+              "Een combinatie van het gemak van een supermarkt met de service van een buurtwinkel."
+            }
+          />
+          <Team
+            title={"Ons team staat voor u klaar"}
+            subtitle={
+              "Ons top team staat steed paraat met raad en daad. Heeft u een vraag, vind u een product niet of wilt u gewoon een gezelge babbel slaan bij ons kan het zeker."
+            }
+          />
           <Features />
           <Spotlight />
         </main>
@@ -22,3 +32,24 @@ export default function HomePage() {
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    markdownRemark(fileAbsolutePath: { glob: "**/pages/home.md" }) {
+      edges {
+        node {
+          id
+          excerpt
+          headings {
+            value
+          }
+          frontmatter {
+            date
+            title
+            image
+          }
+        }
+      }
+    }
+  }
+`
