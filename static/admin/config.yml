@@ -14,8 +14,8 @@ collections:
     create: true
     fields:
       - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - { name: date, label: Date, widget: datetime }
       - { name: body, label: Body, widget: markdown }
   - name: promotions
     label: Promotions
@@ -23,8 +23,8 @@ collections:
     create: true
     fields:
       - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - { name: date, label: Date, widget: datetime }
       - { name: body, label: Body, widget: markdown }
   - name: "pages"
     label: "Pages"
@@ -33,20 +33,21 @@ collections:
         name: "home"
         file: "content/pages/home.md"
         fields:
+          - { label: images, name: test image, widget: image }
           - { label: titel boven hoofd, name: titleOne, widget: string }
-          - { label: subtitel boven, name: subtitleOne, widget: string }
           - { label: titel twee, name: titleTwo, widget: string }
-          - { label: subtitel twee, name: subtitleTwo, widget: string }
           - { label: titel drie, name: titleThree, widget: string }
-          - { label: subtitel drie, name: subtitleThree, widget: string }
-          - { label: spotlight 1 tekst, name: titleOneSpot, widget: string }
-          - { label: spotlight 2 tekst, name: titleTwoSpot, widget: string }
-          - { label: spotlight 3 tekst, name: titleThreeSpot, widget: string }
+          - { label: subtitel boven, name: subtitleOne, widget: text }
+          - { label: subtitel twee, name: subtitleTwo, widget: text }
+          - { label: subtitel drie, name: subtitleThree, widget: text }
           - { label: troef één, name: feature1, widget: string }
           - { label: troef twee, name: feature2, widget: string }
           - { label: troef drie, name: feature3, widget: string }
           - { label: troef vier, name: feature4, widget: string }
-          - { label: troef één tekst, name: feature1Text, widget: string }
-          - { label: troef twee tekst, name: feature2Text, widget: string }
-          - { label: troef drie tekst, name: feature3Text, widget: string }
-          - { label: troef vier tekst, name: feature4Text, widget: string }
+          - { label: troef één tekst, name: feature1Text, widget: text }
+          - { label: troef twee tekst, name: feature2Text, widget: text }
+          - { label: troef drie tekst, name: feature3Text, widget: text }
+          - { label: troef vier tekst, name: feature4Text, widget: text }
+          - { label: spotlight 1 tekst, name: titleOneSpot, widget: string }
+          - { label: spotlight 2 tekst, name: titleTwoSpot, widget: string }
+          - { label: spotlight 3 tekst, name: titleThreeSpot, widget: string }
