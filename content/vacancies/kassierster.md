@@ -1,8 +1,7 @@
 ---
-title: "vacature"
+title: "kassierster"
 date: "2019-01-10"
-image: ""
-keywords: "vacature"
+description: "gezocht kassierster met veel motivatie"
 ---
 
 # Verkoopster/kassierster (M/V)

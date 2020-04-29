@@ -14,7 +14,7 @@ export default function Vacancies({ data }) {
             key={node.id}
             title={node.frontmatter.title}
             date={node.frontmatter.date}
-            content={node.excerpt}
+            content={node.frontmatter.description}
           />
         )
       })}
@@ -41,7 +41,7 @@ export const query = graphql`
           frontmatter {
             date
             title
-            image
+            description
           }
         }
       }

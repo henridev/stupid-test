@@ -33,7 +33,6 @@ collections:
         name: "home"
         file: "content/pages/home.md"
         fields:
-          - { label: images, name: test image, widget: image }
           - { label: titel boven hoofd, name: titleOne, widget: string }
           - { label: titel twee, name: titleTwo, widget: string }
           - { label: titel drie, name: titleThree, widget: string }
