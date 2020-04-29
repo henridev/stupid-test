@@ -1,5 +1,5 @@
 import React from "react"
-
+import { graphql } from "gatsby"
 import Layout from "../components/global/layout"
 import Landing from "../components/home/landing"
 import Features from "../components/home/features"
@@ -35,21 +35,8 @@ export default function HomePage() {
 
 export const query = graphql`
   query {
-    markdownRemark(fileAbsolutePath: { glob: "**/pages/home.md" }) {
-      edges {
-        node {
-          id
-          excerpt
-          headings {
-            value
-          }
-          frontmatter {
-            date
-            title
-            image
-          }
-        }
-      }
+    markdownRemark(fileAbsolutePath: { glob: "**/home.md" }) {
+      excerpt
     }
   }
 `

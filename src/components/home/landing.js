@@ -1,7 +1,6 @@
 import React from "react"
 import styles from "../styles/landing.module.scss"
 import Button from "../global/button"
-import { graphql, useStaticQuery } from "gatsby"
 
 export default function Landing({ title, subtitle }) {
   return (
