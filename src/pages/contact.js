@@ -6,6 +6,7 @@ import styles from "./styles/contact.module.scss"
 export default function ContactPage() {
   return (
     <Layout>
+      <h2 className={styles.title}>Ons team staat voor u klaar</h2>
       <form
         name="contact"
         method="POST"

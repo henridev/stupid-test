@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "../styles/item.module.scss"
+import styles from "../../styles/item.module.scss"
 
 export default function Item({ title, imgSrc }) {
   return (

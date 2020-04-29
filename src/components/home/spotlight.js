@@ -1,5 +1,5 @@
 import React from "react"
-import Item from "../spotlight/item"
+import Item from "./spotlight/item"
 import styles from "../styles/spotlight.module.scss"
 
 export default function Spotlight({

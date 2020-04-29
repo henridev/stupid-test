@@ -2,7 +2,7 @@ import React from "react"
 import styles from "../styles/footer.module.scss"
 import Button from "./button"
 import SocialButton from "./socialbutton"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 export default function Footer() {
   const data = useStaticQuery(graphql`
@@ -20,7 +20,9 @@ export default function Footer() {
       <div className={styles.row1}>
         <h2 className={styles.title}>Spring gerust eens binnen!</h2>
         <div className={styles.actions}>
-          <Button style={styles.contactbutton} text="contacteer" />
+          <Link to="/contact">
+            <Button style={styles.contactbutton} text="contacteer" />
+          </Link>
           <Button style={styles.orderbutton} text="plaats bestelling" />
         </div>
       </div>

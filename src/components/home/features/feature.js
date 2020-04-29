@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "../styles/feature.module.scss"
+import styles from "../../styles/feature.module.scss"
 
 export default function Feature({ title, imgSrc, paragraph }) {
   return (
