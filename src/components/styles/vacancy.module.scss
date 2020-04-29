@@ -17,3 +17,17 @@
   top: 50px;
   margin: 10px;
 }
+
+.article {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.article > * {
+  margin: 20px;
+}
+
+.article > a {
+  justify-self: flex-end;
+}

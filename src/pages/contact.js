@@ -40,7 +40,9 @@ export default function ContactPage() {
           <textarea className={styles.textarea} name="message"></textarea>
         </p>
         <p>
-          <button type="submit">Send</button>
+          <button className={styles.button} type="submit">
+            Send
+          </button>
         </p>
       </form>
     </Layout>
