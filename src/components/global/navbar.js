@@ -25,7 +25,9 @@ export default function Navbar() {
         <NavLink to="/vacancies" text="vacature" />
         <NavLink to="/contact" text="contact" />
       </div>
-      <Button style={styles.button} text="plaats bestelling" />
+      <Link to="/order">
+        <Button style={styles.button} text="plaats bestelling" />
+      </Link>
     </nav>
   )
 }
