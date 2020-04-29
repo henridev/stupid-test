@@ -35,7 +35,7 @@ collections:
         fields:
           - { label: title-one, name: title-one, widget: string }
           - { label: subtitle-one, name: subtitle-one, widget: string }
-          - { label: title-two, name: subtitle-two, widget: string }
+          - { label: title-two, name: title-two, widget: string }
           - { label: subtitle-two, name: subtitle-two, widget: string }
-          - { label: title-three, name: subtitle-three, widget: string }
+          - { label: title-three, name: title-three, widget: string }
           - { label: subtitle-three, name: subtitle-three, widget: string }

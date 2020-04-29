@@ -2,35 +2,32 @@ import React from "react"
 import Feature from "../features/feature"
 import styles from "../styles/features.module.scss"
 
-export default function features() {
+export default function features({ title, subtitle }) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.heading}>
-        <h2 className={styles.subtitle}>Onze troeven</h2>
-        <p className={styles.paragraph}>
-          Enkele van onze troeven vind u hier. Natuurlijk bieden we hiernaast
-          nog veel meer.
-        </p>
+        <h2 className={styles.subtitle}>{title}</h2>
+        <p className={styles.paragraph}>{subtitle}</p>
       </div>
       <div className={styles.features}>
         <Feature
           title="Verse Bakkerij"
-          imgSrc="/assets/images/jpg/koeken.jpg"
+          imgSrc="/assets/images/uploads/feature1.jpg"
           paragraph="Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time."
         />
         <Feature
           title="Verse Bakkerij"
-          imgSrc="/assets/images/jpg/fruit.jpg"
+          imgSrc="/assets/images/uploads/feature2.jpg"
           paragraph="Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time."
         />
         <Feature
           title="Verse Bakkerij"
-          imgSrc="/assets/images/jpg/lunch.jpg"
+          imgSrc="/assets/images/uploads/feature3.jpg"
           paragraph="Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time."
         />
         <Feature
           title="Verse Bakkerij"
-          imgSrc="/assets/images/jpg/toog.jpg"
+          imgSrc="/assets/images/uploads/feature4.jpg"
           paragraph="Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time."
         />
       </div>
