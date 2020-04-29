@@ -1,14 +1,13 @@
 import React from "react"
 import styles from "../styles/item.module.scss"
-import { Link } from "gatsby"
 
-export default function Item({ title, to }) {
+export default function Item({ title, imgSrc }) {
   return (
     <div className={styles.wrapper}>
       <h2 className={styles.title}>{title}</h2>
       <div
         style={{
-          backgroundImage: `Url(/assets/images/jpg/soep.jpg)`,
+          backgroundImage: `Url(${imgSrc}`,
           width: "90%",
           height: "80%",
           backgroundRepeat: "no-repeat",
@@ -19,9 +18,6 @@ export default function Item({ title, to }) {
           margin: "0 auto",
         }}
       ></div>
-      <p>
-        <Link to={to}>meer info</Link>
-      </p>
     </div>
   )
 }

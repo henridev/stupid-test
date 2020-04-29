@@ -19,6 +19,9 @@ export default function HomePage({ data }) {
         title_three,
         title_two,
         title_one,
+        titleOneSpot,
+        titleTwoSpot,
+        titleThreeSpot,
       },
     },
   } = data
@@ -29,7 +32,11 @@ export default function HomePage({ data }) {
           <Landing title={title_one} subtitle={subtitle_one} />
           <Team title={title_two} subtitle={subtitle_two} />
           <Features title={title_three} subtitle={subtitle_three} />
-          <Spotlight />
+          <Spotlight
+            titleOneSpot={titleOneSpot}
+            titleTwoSpot={titleTwoSpot}
+            titleThreeSpot={titleThreeSpot}
+          />
         </main>
       </div>
     </Layout>
@@ -46,6 +53,9 @@ export const query = graphql`
         title_three
         title_two
         title_one
+        titleOneSpot
+        titleTwoSpot
+        titleThreeSpot
       }
     }
   }

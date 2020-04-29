@@ -33,9 +33,12 @@ collections:
         name: "home"
         file: "content/pages/home.md"
         fields:
-          - { label: title-one, name: title-one, widget: string }
-          - { label: subtitle-one, name: subtitle-one, widget: string }
-          - { label: title-two, name: title-two, widget: string }
-          - { label: subtitle-two, name: subtitle-two, widget: string }
-          - { label: title-three, name: title-three, widget: string }
-          - { label: subtitle-three, name: subtitle-three, widget: string }
+          - { label: titel boven hoofd, name: title-one, widget: string }
+          - { label: subtitel boven, name: subtitle-one, widget: string }
+          - { label: titel twee, name: title-two, widget: string }
+          - { label: subtitel twee, name: subtitle-two, widget: string }
+          - { label: titel drie, name: title-three, widget: string }
+          - { label: subtitel drie, name: subtitle-three, widget: string }
+          - { label: spotlight 1 tekst, name: titleOneSpot, widget: string }
+          - { label: spotlight 2 tekst, name: titleTwoSpot, widget: string }
+          - { label: spotlight 3 tekst, name: titleThreeSpot, widget: string }
