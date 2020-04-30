@@ -21,13 +21,13 @@ export default function Navbar() {
       />
       <div className={styles.linkwrapper}>
         <NavLink to="/" text="home" />
-        <NavLink to="/order" text="bestel" />
         <NavLink to="/vacancies" text="vacature" />
         <NavLink to="/contact" text="contact" />
+        {/* <NavLink to="/order" text="bestel" /> */}
       </div>
-      <Link to="/order">
+      {/* <Link to="/order">
         <Button style={styles.button} text="plaats bestelling" />
-      </Link>
+      </Link> */}
     </nav>
   )
 }

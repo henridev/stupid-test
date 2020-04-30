@@ -23,9 +23,9 @@ export default function Footer() {
           <Link to="/contact">
             <Button style={styles.contactbutton} text="contacteer" />
           </Link>
-          <Link to="/order">
+          {/* <Link to="/order">
             <Button style={styles.orderbutton} text="plaats bestelling" />
-          </Link>
+          </Link> */}
         </div>
       </div>
 

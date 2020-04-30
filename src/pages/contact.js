@@ -11,8 +11,11 @@ export default function ContactPage() {
         name="contact"
         method="POST"
         data-netlify="true"
+        data-netlify-honeypot="bot-field"
         className={styles.form}
       >
+        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+        <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>
             naam{" "}
