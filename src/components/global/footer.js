@@ -3,6 +3,7 @@ import styles from "../styles/footer.module.scss"
 import Button from "./button"
 import SocialButton from "./socialbutton"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import { FaCcVisa, FaCcMastercard } from "react-icons/fa"
 
 export default function Footer() {
   const data = useStaticQuery(graphql`
@@ -32,7 +33,7 @@ export default function Footer() {
       <div className={styles.row2}>
         <div className={styles.companyinfo}>
           <div className={styles.company}>
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex", alignItems: "center" }}>
               <img
                 src="/assets/images/svg/logo.svg"
                 alt="logo"
@@ -46,18 +47,22 @@ export default function Footer() {
               9000 Gent
             </div>
           </div>
-          <img
-            width="300"
-            src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s-marker+ff0000(3.733121,51.066234)/3.733121,51.066234,15,0/500x500@2x?access_token=pk.eyJ1IjoiYmVsa2UwNSIsImEiOiJjazBzNDFnY2owYzQ0M21xbGxwZnNqZW91In0.uiusgRl10zeCVqvUH6PtMg"
-            alt="Mapbox Map of 3.733121,51.066234"
-          />
+          <div className={styles.algemene}>
+            <span className={styles.name}>Algmene informatie</span>
+
+            <span>betaalmethoden</span>
+            <br />
+            <FaCcVisa />
+            <FaCcMastercard />
+          </div>
+
           <div className={styles.socials}>
             <div className={styles.contacts}>
               tel: 09 224 11 19 <br />
               mail: bello.dok@gmail.com
               <br />
+              <SocialButton socialnetwork="facebook" />
             </div>
-            <SocialButton socialnetwork="facebook" />
           </div>
         </div>
       </div>

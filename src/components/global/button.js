@@ -6,7 +6,7 @@ export default function Button(props) {
       onClick={props.handleClick ? props.handleClick : null}
       className={props.style}
     >
-      {props.text}
+      {props.text || props.children}
     </button>
   )
 }

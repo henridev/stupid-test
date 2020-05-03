@@ -1,16 +1,19 @@
 import React from "react"
 import styles from "../styles/socialbutton.module.scss"
+import { FaPhone, FaFacebook } from "react-Icons/fa"
 
 export default function socialbutton({ socialnetwork }) {
   let url = null
   let style = styles.facebookbutton
   let imgurl = "/png/facebook.png"
+  let Icon = FaFacebook
 
   switch (socialnetwork) {
     case "facebook":
       style = styles.facebookbutton
       url =
         "https://www.facebook.com/DelhaizeDokNoord/?ref=br_tf&epa=SEARCH_BOX"
+      Icon = FaFacebook
       break
 
     default:
@@ -22,14 +25,7 @@ export default function socialbutton({ socialnetwork }) {
 
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
-      <button
-        style={{
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundImage: `Url(${imgurl})`,
-        }}
-        className={style}
-      ></button>
+      <Icon className={style}></Icon>
     </a>
   )
 }

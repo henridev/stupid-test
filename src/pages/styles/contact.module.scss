@@ -1,68 +1,137 @@
 @import "../../styles/colors.scss";
 
-.input,
-.textarea {
-  border: 0;
-  outline: 0;
-  padding: 1em;
-  border-radius: 8px;
-  display: block;
-  max-width: 500px;
-  width: 100%;
-  margin-top: 1em;
-  font-family: "Merriweather", sans-serif;
-  box-shadow: 1px 2px 2px rgba(black, 0.2);
-  resize: none;
-  &:focus {
-    box-shadow: 0 0px 3px rgba($red, 1) !important;
-  }
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.textarea {
-  min-height: 200px;
-  margin: 0 auto;
+.mapimg {
+  margin: 50px;
 }
 
 .form {
-  width: 40%;
-  background-color: #e0e0e0;
-  margin: 0 auto;
+  font-family: "Merriweather", sans-serif;
+  width: 540px;
+  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  border: 2px solid $pink;
   border-radius: 20px;
+  box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+  h3 {
+    width: 428px;
+  }
+  .input,
+  .textarea {
+    padding: 1em;
+    display: block;
+    width: 428px;
+    margin-top: 1em;
+    box-shadow: 1px 2px 2px rgba(black, 0.2);
+    resize: none;
+    opacity: 0.4;
+    border: 1px solid #356ead;
+    box-sizing: border-box;
+    border-radius: 10px;
+    &:focus {
+      box-shadow: 0 0px 3px rgba($red, 1) !important;
+    }
+  }
+
+  .textarea {
+    min-height: 130px;
+  }
+
+  .label {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1f3f68;
+    opacity: 0.8;
+  }
+  .button {
+    font-weight: bold;
+    background: $pink;
+    border-radius: 50px;
+    color: white;
+    border: 0px;
+    width: 210px;
+    height: 60px;
+    margin: 10px;
+    box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+      -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    padding: 1.3rem;
+  }
 }
 
-.message {
-  width: 100%;
+// banner region
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+  .subtitle {
+    font-family: Avenir LT Std;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+  }
+  .title {
+    font-family: Helvetica;
+    font-size: 44px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+  }
 }
 
-.title {
-  font-family: Helvetica;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 130%;
-  /* or 52px */
-  width: 100%;
+// ---------------
+// inforegion region
 
-  color: #212353;
+.infosection {
+  text-align: left;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 50px;
+  .infoparagraph {
+    font-family: Avenir LT Std;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #1f3f68;
+    opacity: 0.6;
+  }
+  .contactpic {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .infotitle {
+  }
+  .infotexts {
+    margin-top: 10px;
+  }
+  .icons {
+    width: 24px;
+    height: 24px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    a {
+      text-decoration: none;
+      margin-left: 5px;
+      color: inherit;
+    }
+  }
 }
 
-.button {
-  background: $gray;
-  border-radius: 50px;
-  color: white;
-  border: 0px;
-  width: 210px;
-  height: 60px;
-  left: 1150px;
-  top: 50px;
-  margin: 10px;
-  box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
-    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
-  overflow: hidden;
-  padding: 1.3rem;
-}
+// ---------------
