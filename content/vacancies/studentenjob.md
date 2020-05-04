@@ -1,7 +1,8 @@
 ---
-title: "Studentenjob"
-date: "2019-01-10"
-description: "enthousiast student gezocht"
+title: Studentenjob
+date: 2019-01-10
+description: enthousiast student gezocht
+path: /jobstudent
 ---
 
 # Magzijnier (M/V)
