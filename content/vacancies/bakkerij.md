@@ -2,7 +2,7 @@
 title: Medewerker bakkerij
 date: 2019-01-10
 description: gezocht bakker met veel motivatie
-path: /bakkerij
+path: /bakker
 ---
 
 # Bakker (M/V)
