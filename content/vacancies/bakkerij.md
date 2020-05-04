@@ -1,7 +1,8 @@
 ---
-title: "Medewerker bakkerij"
-date: "2019-01-10"
-description: "gezocht bakker met veel motivatie"
+title: Medewerker bakkerij
+date: 2019-01-10
+description: gezocht bakker met veel motivatie
+path: /bakkerij
 ---
 
 # Bakker (M/V)
