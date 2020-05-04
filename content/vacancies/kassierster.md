@@ -1,7 +1,8 @@
 ---
-title: "kassierster"
-date: "2019-01-10"
-description: "gezocht kassierster met veel motivatie"
+title: kassierster
+date: 2019-01-10
+description: gezocht kassierster met veel motivatie
+path: /kassierster
 ---
 
 # Verkoopster/kassierster (M/V)
